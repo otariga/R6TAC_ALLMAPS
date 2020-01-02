@@ -1,0 +1,1015 @@
+body {
+  background: black;
+}
+.sponsor_space{
+  position: absolute;
+  top: 20px;
+  left: 1425px;
+  text-align: center;
+}
+.sponsor_space h1{
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+/* 攻撃側、防衛側エリアの基準位置 */
+.defense_slot {
+  border: 0.1rem solid white;
+  display: inline-block;
+  width: 730px;
+  height: 115px;
+  position: relative;
+  margin-left: 20px;
+}
+.attack_slot {
+  border: 0.1rem solid white;
+  display: block;
+  width: 730px;
+  height: 115px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* アイコンすべてに適応 */
+.drag-and-drop {
+  cursor: move;
+  position: absolute;
+  z-index: 10;
+}
+/* オペレーターアイコンすべてに適応 */
+.icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.gadget {
+  width: 25px;
+  height: 25px;
+}
+.barricade {
+  width: 20px;
+  height: 30px;
+}
+/* 攻撃側ガジェット位置決め */
+.drone_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 740px;
+  border: 2px solid white;
+  text-align: center;
+}
+.drone_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.drone {
+  position: absolute;
+  top: 70px;
+  left: 763px;
+  border: 2px solid rgb(255, 0, 0);
+}
+.bleaching_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 825px;
+  border: 2px solid white;
+  text-align: center;
+}
+.bleaching {
+  position: absolute;
+  top: 70px;
+  left: 848px;
+  border: 2px solid rgb(255, 255, 0);
+}
+.bleaching_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 9px;
+}
+.claymore_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 910px;
+  border: 2px solid white;
+  text-align: center;
+}
+.claymore {
+  position: absolute;
+  top: 70px;
+  left: 933px;
+  border: 2px solid rgb(0, 255, 255);
+}
+.claymore_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.smoke_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 995px;
+  border: 2px solid white;
+  text-align: center;
+}
+.smoke {
+  position: absolute;
+  top: 70px;
+  left: 1018px;
+  border: 2px solid rgb(0, 255, 0);
+}
+.smoke_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.grenade_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 1080px;
+  border: 2px solid white;
+  text-align: center;
+}
+.grenade {
+  position: absolute;
+  top: 70px;
+  left: 1103px;
+  border: 2px solid rgb(0, 0, 255);
+}
+.grenade_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.flash_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 1165px;
+  border: 2px solid white;
+  text-align: center;
+}
+.flash {
+  position: absolute;
+  top: 70px;
+  left: 1188px;
+  border: 2px solid rgb(255, 0, 255);
+}
+.flash_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.diffuser_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top:20px;
+  left: 1250px;
+  border: 2px solid white;
+  text-align: center;
+}
+.diffuser {
+  position: absolute;
+  top: 70px;
+  left: 1273px;
+  border: 2px solid rgb(255, 155, 0);
+}
+.diffuser_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 11px;
+}
+/* 防衛側ガジェット位置決め */
+.reinforcement_slot {
+  text-align: center;
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 740px;
+  border: 2px solid white;
+}
+.reinforcement_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 15px;
+}
+.reinforcement {
+  position: absolute;
+  top: 70px;
+  left: 763px;
+  border: 2px solid rgb(255, 0, 0);
+}
+.wire_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 825px;
+  border: 2px solid white;
+  text-align: center;
+}
+.wire {
+  position: absolute;
+  top: 70px;
+  left: 848px;
+  border: 2px solid rgb(255, 255, 0);
+}
+.wire_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.shield_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 910px;
+  border: 2px solid white;
+  text-align: center;
+}
+.shield {
+  position: absolute;
+  top: 70px;
+  left: 933px;
+  border: 2px solid rgb(0, 255, 255);
+}
+.shield_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+.camera_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 995px;
+  border: 2px solid white;
+  text-align: center;
+}
+.camera {
+  position: absolute;
+  top: 70px;
+  left: 1018px;
+  border: 2px solid rgb(0, 255, 0);
+}
+.camera_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.impact_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 1080px;
+  border: 2px solid white;
+  text-align: center;
+}
+.impact {
+  position: absolute;
+  top: 70px;
+  left: 1103px;
+  border: 2px solid rgb(0, 0, 255);
+}
+.impact_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.c4_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 1165px;
+  border: 2px solid white;
+  text-align: center;
+}
+.c4 {
+  position: absolute;
+  top: 70px;
+  left: 1188px;
+  border: 2px solid rgb(255, 0, 255);
+}
+.c4_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 15px;
+}
+.barricade_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top:20px;
+  left: 1250px;
+  border: 2px solid white;
+  text-align: center;
+}
+.barricade {
+  position: absolute;
+  top: 68px;
+  left: 1275px;
+  border: 2px solid rgb(255, 155, 0);
+}
+.barricade_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
+.container {
+  position: relative;
+  width: 1920px;
+  height: 900px;
+}
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  background-color: #fff;
+  position: absolute;
+  height: 0px;
+  width: 0px;
+}
+/*タブのスタイル*/
+.tab_item {
+  height: 30px;
+  width: 135px;
+  background-color: #d9d9d9;
+  line-height: 30px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #565656;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0.8;
+}
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: rgb(250, 180, 0);
+  color: #fff;
+  opacity: 1;
+}
+/* マップ名前のタブの位置決め */
+.L1 {
+  top: 12.8px;
+  left: 1620px;
+}
+.L2 {
+  top: 42.8px;
+  left: 1620px;
+}
+.L3 {
+  top: 72.8px;
+  left: 1620px;
+}
+.L4 {
+  top: 102.8px;
+  left: 1620px;
+}
+.L5 {
+  top: 132.8px;
+  left: 1620px;
+}
+.L6 {
+  top: 162.8px;
+  left: 1620px;
+}
+.L7 {
+  top: 192.8px;
+  left: 1620px;
+}
+.L8 {
+  top: 222.8px;
+  left: 1620px;
+}
+.L9 {
+  top: 252.8px;
+  left: 1620px;
+}
+.L10 {
+  top: 282.8px;
+  left: 1620px;
+}
+.L11 {
+  top: 312.8px;
+  left: 1620px;
+}
+.L12 {
+  top: 342.8px;
+  left: 1620px;
+}
+.L13 {
+  top: 372.8px;
+  left: 1620px;
+}
+.L14 {
+  top: 402.8px;
+  left: 1620px;
+}
+.L15 {
+  top: 432.8px;
+  left: 1620px;
+}
+.L16 {
+  top: 462.8px;
+  left: 1620px;
+}
+.L17 {
+  top: 492.8px;
+  left: 1620px;
+}
+.L18 {
+  top: 522.8px;
+  left: 1620px;
+}
+.L19 {
+  top: 552.8px;
+  left: 1620px;
+}
+.L20 {
+  top: 582.8px;
+  left: 1620px;
+}
+.L21 {
+  top: 612.8px;
+  left: 1620px;
+}
+.L22 {
+  top: 642.8px;
+  left: 1620px;
+}
+.L23 {
+  top: 672.8px;
+  left: 1620px;
+}
+.L24 {
+  top: 702.8px;
+  left: 1620px;
+}
+.L25 {
+  top: 732.8px;
+  left: 1620px;
+}
+.L26 {
+  top: 762.8px;
+  left: 1620px;
+}
+.L27 {
+  top: 792.8px;
+  left: 1620px;
+}
+.L28 {
+  top: 822.8px;
+  left: 1620px;
+}
+.L29 {
+  top: 852.8px;
+  left: 1620px;
+}
+.L30 {
+  top: 882.8px;
+  left: 1620px;
+}
+.L31 {
+  top: 912.8px;
+  left: 1620px;
+}
+.L32 {
+  top: 942.8px;
+  left: 1620px;
+}
+.L33 {
+  top: 972.8px;
+  left: 1620px;
+}
+.R1 {
+  top: 12.8px;
+  left: 1758px;
+}
+.R2 {
+  top: 42.8px;
+  left: 1758px;
+}
+.R3 {
+  top: 72.8px;
+  left: 1758px;
+}
+.R4 {
+  top: 102.8px;
+  left: 1758px;
+}
+.R5 {
+  top: 132.8px;
+  left: 1758px;
+}
+.R6 {
+  top: 162.8px;
+  left: 1758px;
+}
+.R7 {
+  top: 192.8px;
+  left: 1758px;
+}
+.R8 {
+  top: 222.8px;
+  left: 1758px;
+}
+.R9 {
+  top: 252.8px;
+  left: 1758px;
+}
+.R10 {
+  top: 282.8px;
+  left: 1758px;
+}
+.R11 {
+  top: 312.8px;
+  left: 1758px;
+}
+.R12 {
+  top: 342.8px;
+  left: 1758px;
+}
+.R13 {
+  top: 372.8px;
+  left: 1758px;
+}
+.R14 {
+  top: 402.8px;
+  left: 1758px;
+}
+.R15 {
+  top: 432.8px;
+  left: 1758px;
+}
+.R16 {
+  top: 462.8px;
+  left: 1758px;
+}
+.R17 {
+  top: 492.8px;
+  left: 1758px;
+}
+.R18 {
+  top: 522.8px;
+  left: 1758px;
+}
+.R19 {
+  top: 552.8px;
+  left: 1758px;
+}
+.R20 {
+  top: 582.8px;
+  left: 1758px;
+}
+.R21 {
+  top: 612.8px;
+  left: 1758px;
+}
+.R22 {
+  top: 642.8px;
+  left: 1758px;
+}
+.R23 {
+  top: 672.8px;
+  left: 1758px;
+}
+.R24 {
+  top: 702.8px;
+  left: 1758px;
+}
+.R25 {
+  top: 732.8px;
+  left: 1758px;
+}
+.R26 {
+  top: 762.8px;
+  left: 1758px;
+}
+.R27 {
+  top: 792.8px;
+  left: 1758px;
+}
+.R28 {
+  top: 822.8px;
+  left: 1758px;
+}
+.R29 {
+  top: 852.8px;
+  left: 1758px;
+}
+.R30 {
+  top: 882.8px;
+  left: 1758px;
+}
+.R31 {
+  top: 912.8px;
+  left: 1758px;
+}
+.R32 {
+  top: 942.8px;
+  left: 1758px;
+}
+.R33 {
+  top: 972.8px;
+  left: 1758px;
+}
+.R34 {
+  top: 1002.8px;
+  left: 1758px;
+}
+.R35 {
+  top: 1032.8px;
+  left: 1758px;
+  margin-bottom: 50px;
+}
+.tab_item:hover {
+  opacity: 1;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#bank2f:checked ~ #bank2f,
+#bank1f:checked ~ #bank1f,
+#bankb1:checked ~ #bankb1,
+#border2f:checked ~ #border2f,
+#border1f:checked ~ #border1f,
+#cafe3f:checked ~ #cafe3f,
+#cafe2f:checked ~ #cafe2f,
+#cafe1f:checked ~ #cafe1f,
+#club2f:checked ~ #club2f,
+#club1f:checked ~ #club1f,
+#clubb1:checked ~ #clubb1,
+#coastline2f:checked ~ #coastline2f,
+#coastline1f:checked ~ #coastline1f,
+#consulate2f:checked ~ #consulate2f,
+#consulate1f:checked ~ #consulate1f,
+#consulateb1:checked ~ #consulateb1,
+#villa2f:checked ~ #villa2f,
+#villa1f:checked ~ #villa1f,
+#villab1:checked ~ #villab1,
+#kanal2f:checked ~ #kanal2f,
+#kanal1f:checked ~ #kanal1f,
+#kanalb1:checked ~ #kanalb1,
+#kanalb2:checked ~ #kanalb2,
+#bartlett2f:checked ~ #bartlett2f,
+#bartlett1f:checked ~ #bartlett1f,
+#chalet2f:checked ~ #chalet2f,
+#chalet1f:checked ~ #chalet1f,
+#chaletb1:checked ~ #chaletb1,
+#favela3f:checked ~ #favela3f,
+#favela2f:checked ~ #favela2f,
+#favela1f:checked ~ #favela1f,
+#fortress2f:checked ~ #fortress2f,
+#fortress1f:checked ~ #fortress1f,
+#hereford3f:checked ~ #hereford3f,
+#hereford2f:checked ~ #hereford2f,
+#hereford1f:checked ~ #hereford1f,
+#herefordb1:checked ~ #herefordb1,
+#house2f:checked ~ #house2f,
+#house1f:checked ~ #house1f,
+#houseb1:checked ~ #houseb1,
+#oregon3f:checked ~ #oregon3f,
+#oregon2f:checked ~ #oregon2f,
+#oregon1f:checked ~ #oregon1f,
+#oregonb1:checked ~ #oregonb1,
+#outback2fa:checked ~ #outback2fa,
+#outback2fb:checked ~ #outback2fb,
+#outback1fa:checked ~ #outback1fa,
+#outback1fb:checked ~ #outback1fb,
+#plane3fa:checked ~ #plane3fa,
+#plane3fb:checked ~ #plane3fb,
+#plane2fa:checked ~ #plane2fa,
+#plane2fb:checked ~ #plane2fb,
+#plane1fa:checked ~ #plane1fa,
+#plane1fb:checked ~ #plane1fb,
+#skyscraper2f:checked ~ #skyscraper2f,
+#skyscraper1f:checked ~ #skyscraper1f,
+#themepark2f:checked ~ #themepark2f,
+#themepark1f:checked ~ #themepark1f,
+#tower2fa:checked ~ #tower2fa,
+#tower2fb:checked ~ #tower2fb,
+#tower1fa:checked ~ #tower1fa,
+#tower1fb:checked ~ #tower1fb,
+#yacht4f:checked ~ #yacht4f,
+#yacht3f:checked ~ #yacht3f,
+#yacht2fa:checked ~ #yacht2fa,
+#yacht2fb:checked ~ #yacht2fb,
+#yacht1fa:checked ~ #yacht1fa,
+#yacht1fb:checked ~ #yacht1fb {
+  display: block;
+}
+
+/* お絵描きエリアのcss */
+
+#canvas {
+  margin: 0.8rem;
+}
+input[type="image"] {
+  padding: 0.2rem;
+  outline: none;
+}
+
+input[type="image"].active {
+  border: 0.2rem solid white;
+}
+.map {
+  margin: 0.8rem;
+  width: 1600px;
+  height: 900px;
+}
+canvas {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 2;
+}
+.palette {
+  position: absolute;
+  top: -70px;
+  left: 1380px;
+  position: relative;
+}
+label {
+  color: white;
+  margin-right: 0.5rem;
+}
+.btn {
+  opacity: 0.8;
+}
+.btn:hover {
+ opacity: 1;
+}
+#reset_icon {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+}
+#delete_canvas {
+  position: absolute;
+  top: -40px;
+  left: 110px;
+}
+#all_reset {
+  position: absolute;
+  top: -40px;
+  left: 220px;
+}
+#color,
+#width {
+  margin-left: 0.4rem;
+}
+/* オペレーターのアイコンの位置決め */
+/* 防衛側オペレーターアイコンの位置決め */
+#smoke {
+  top: 15px;
+  left: 10px;
+}
+#mute {
+  top: 15px;
+  left: 55px;
+}
+#castle {
+  top: 15px;
+  left: 100px;
+}
+#pulse {
+  top: 15px;
+  left: 145px;
+}
+#doc {
+  top: 15px;
+  left: 190px;
+}
+#rook {
+  top: 15px;
+  left: 235px;
+}
+#kapkan {
+  top: 15px;
+  left: 280px;
+}
+#tachanka {
+  top: 15px;
+  left: 325px;
+}
+#jager {
+  top: 15px;
+  left: 370px;
+}
+#bandit {
+  top: 15px;
+  left: 415px;
+}
+#frost {
+  top: 15px;
+  left: 460px;
+}
+#valkyrie {
+  top: 15px;
+  left: 505px;
+}
+#caveira {
+  top: 15px;
+  left: 550px;
+}
+#echo {
+  top: 15px;
+  left: 595px;
+}
+#mira {
+  top: 15px;
+  left: 640px;
+}
+#lesion {
+  top: 15px;
+  left: 685px;
+}
+#ela {
+  top: 65px;
+  left: 10px;
+}
+#vigil {
+  top: 65px;
+  left: 55px;
+}
+#maestro {
+  top: 65px;
+  left: 100px;
+}
+#alibi {
+  top: 65px;
+  left: 145px;
+}
+#clash {
+  top: 65px;
+  left: 190px;
+}
+#kaid {
+  top: 65px;
+  left: 235px;
+}
+#mozzie {
+  top: 65px;
+  left: 280px;
+}
+#warden {
+  top: 65px;
+  left: 325px;
+}
+#goyo {
+  top: 65px;
+  left: 370px;
+}
+#wamai {
+  top: 65px;
+  left: 415px;
+}
+/* 攻撃側オペレーターアイコン位置決め */
+#sledge {
+  top: 15px;
+  left: 10px;
+}
+#thatcher {
+  top: 15px;
+  left: 55px;
+}
+#ash {
+  top: 15px;
+  left: 100px;
+}
+#thermite {
+  top: 15px;
+  left: 145px;
+}
+#twitch {
+  top: 15px;
+  left: 190px;
+}
+#montagne {
+  top: 15px;
+  left: 235px;
+}
+#glaz {
+  top: 15px;
+  left: 280px;
+}
+#fuze {
+  top: 15px;
+  left: 325px;
+}
+#blitz {
+  top: 15px;
+  left: 370px;
+}
+#iq {
+  top: 15px;
+  left: 415px;
+}
+#buck {
+  top: 15px;
+  left: 460px;
+}
+#blackbeard {
+  top: 15px;
+  left: 505px;
+}
+#capitao {
+  top: 15px;
+  left: 550px;
+}
+#hibana {
+  top: 15px;
+  left: 595px;
+}
+#jackal {
+  top: 15px;
+  left: 640px;
+}
+#ying {
+  top: 15px;
+  left: 685px;
+}
+#zofia {
+  top: 65px;
+  left: 10px;
+}
+#dokkaebi {
+  top: 65px;
+  left: 55px;
+}
+#lion {
+  top: 65px;
+  left: 100px;
+}
+#finka {
+  top: 65px;
+  left: 145px;
+}
+#marverick {
+  top: 65px;
+  left: 190px;
+}
+#nomad {
+  top: 65px;
+  left: 235px;
+}
+#gridlock {
+  top: 65px;
+  left: 280px;
+}
+#nokk {
+  top: 65px;
+  left: 325px;
+}
+#amaru {
+  top: 65px;
+  left: 370px;
+}
+#kali {
+  top: 65px;
+  left: 415px;
+}
