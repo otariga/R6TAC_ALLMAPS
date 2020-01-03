@@ -758,8 +758,8 @@ input[type="image"].active {
 }
 .map {
   margin: 0.8rem;
-  width: 1600px;
-  height: 900px;
+  width: 1599px;
+  height: 899px;
 }
 canvas {
   position: absolute;
