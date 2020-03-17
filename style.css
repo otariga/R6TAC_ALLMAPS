@@ -956,6 +956,10 @@ label {
   top: 65px;
   left: 415px;
 }
+#oryx {
+  top: 65px;
+  left: 460px;
+}
 /* 攻撃側オペレーターアイコン位置決め */
 #sledge {
   top: 15px;
@@ -1060,4 +1064,8 @@ label {
 #kali {
   top: 65px;
   left: 415px;
+}
+#iana {
+  top: 65px;
+  left: 460px;
 }
