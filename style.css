@@ -395,6 +395,27 @@ body {
   color: white;
   font-size: 12px;
 }
+.alarm_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top:20px;
+  left: 1335px;
+  border: 2px solid white;
+  text-align: center;
+}
+.alarm {
+  position: absolute;
+  top: 68px;
+  left: 1358px;
+  border: 2px solid rgb(0, 255, 128);
+}
+.alarm_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 12px;
+}
 .container {
   position: relative;
   width: 1920px;
@@ -818,7 +839,7 @@ canvas {
 .palette {
   position: absolute;
   top: -70px;
-  left: 1380px;
+  left: 1465px;
   position: relative;
 }
 label {
@@ -960,6 +981,10 @@ label {
   top: 65px;
   left: 460px;
 }
+#melusi {
+  top: 65px;
+  left: 505px;
+}
 /* 攻撃側オペレーターアイコン位置決め */
 #sledge {
   top: 15px;
@@ -1068,4 +1093,12 @@ label {
 #iana {
   top: 65px;
   left: 460px;
+}
+#ace {
+  top: 65px;
+  left: 505px;
+}
+#zero {
+  top: 65px;
+  left: 550px;
 }
