@@ -4,7 +4,7 @@ body {
 .number_slot{
   position: absolute;
   top: 60px;
-  left: 1380px;
+  left: 1465px;
   border: 0.1rem solid white;
   height: 95px;
   width: 245px;
@@ -225,7 +225,7 @@ body {
   color: white;
   font-size: 12px;
 }
-.diffuser_slot {
+.hardbleaching_slot {
   width: 70px;
   height: 90px;
   position: absolute;
@@ -234,10 +234,31 @@ body {
   border: 2px solid white;
   text-align: center;
 }
-.diffuser {
+.hardbleaching {
   position: absolute;
   top: 70px;
   left: 1273px;
+  border: 2px solid rgb(0, 255, 128);
+}
+.hardbleaching_slot span {
+  display: inline-block;
+  margin: 10px 5px;
+  color: white;
+  font-size: 9px;
+}
+.diffuser_slot {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  top:20px;
+  left: 1335px;
+  border: 2px solid white;
+  text-align: center;
+}
+.diffuser {
+  position: absolute;
+  top: 70px;
+  left: 1358px;
   border: 2px solid rgb(255, 155, 0);
 }
 .diffuser_slot span {
@@ -374,7 +395,7 @@ body {
   color: white;
   font-size: 15px;
 }
-.barricade_slot {
+.alarm_slot {
   width: 70px;
   height: 90px;
   position: absolute;
@@ -383,19 +404,19 @@ body {
   border: 2px solid white;
   text-align: center;
 }
-.barricade {
+.alarm {
   position: absolute;
   top: 68px;
   left: 1275px;
-  border: 2px solid rgb(255, 155, 0);
+  border: 2px solid rgb(0, 255, 128);
 }
-.barricade_slot span {
+.alarm_slot span {
   display: inline-block;
   margin: 10px 5px;
   color: white;
   font-size: 12px;
 }
-.alarm_slot {
+.barricade_slot {
   width: 70px;
   height: 90px;
   position: absolute;
@@ -404,13 +425,13 @@ body {
   border: 2px solid white;
   text-align: center;
 }
-.alarm {
+.barricade {
   position: absolute;
   top: 68px;
   left: 1358px;
-  border: 2px solid rgb(0, 255, 128);
+  border: 2px solid rgb(255, 155, 0);
 }
-.alarm_slot span {
+.barricade_slot span {
   display: inline-block;
   margin: 10px 5px;
   color: white;
@@ -984,6 +1005,10 @@ label {
 #melusi {
   top: 65px;
   left: 505px;
+}
+#aruni {
+  top: 65px;
+  left: 550px;
 }
 /* 攻撃側オペレーターアイコン位置決め */
 #sledge {
