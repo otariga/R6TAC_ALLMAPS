@@ -407,7 +407,7 @@ body {
 .alarm {
   position: absolute;
   top: 68px;
-  left: 1275px;
+  left: 1273px;
   border: 2px solid rgb(0, 255, 128);
 }
 .alarm_slot span {
@@ -428,7 +428,7 @@ body {
 .barricade {
   position: absolute;
   top: 68px;
-  left: 1358px;
+  left: 1360px;
   border: 2px solid rgb(255, 155, 0);
 }
 .barricade_slot span {
