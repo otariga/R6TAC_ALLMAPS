@@ -1010,6 +1010,10 @@ label {
   top: 65px;
   left: 550px;
 }
+#thunderbird {
+  top: 65px;
+  left: 595px;
+}
 /* 攻撃側オペレーターアイコン位置決め */
 #sledge {
   top: 15px;
