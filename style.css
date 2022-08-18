@@ -472,6 +472,9 @@ body {
   opacity: 1;
 }
 /* マップ名前のタブの位置決め */
+.fz-5 {
+  font-size: 5px;
+}
 .L1 {
   top: 12.8px;
   left: 1620px;
@@ -602,6 +605,14 @@ body {
 }
 .L33 {
   top: 972.8px;
+  left: 1620px;
+}
+.L34 {
+  top: 1002.8px;
+  left: 1620px;
+}
+.L35 {
+  top: 1032.8px;
   left: 1620px;
 }
 .R1 {
@@ -829,7 +840,9 @@ input[name="tab_item"] {
 #yacht2fa:checked ~ #yacht2fa,
 #yacht2fb:checked ~ #yacht2fb,
 #yacht1fa:checked ~ #yacht1fa,
-#yacht1fb:checked ~ #yacht1fb {
+#yacht1fb:checked ~ #yacht1fb,
+#ep2f:checked ~ #ep2f,
+#ep1f:checked ~ #ep1f {
   display: block;
 }
 
@@ -1014,6 +1027,14 @@ label {
   top: 65px;
   left: 595px;
 }
+#thorn {
+  top: 65px;
+  left: 640px;
+}
+#azami {
+  top: 65px;
+  left: 685px;
+}
 /* 攻撃側オペレーターアイコン位置決め */
 #sledge {
   top: 15px;
@@ -1134,4 +1155,12 @@ label {
 #flores {
   top: 65px;
   left: 595px;
+}
+#osa {
+  top: 65px;
+  left: 640px;
+}
+#sens {
+  top: 65px;
+  left: 685px;
 }
