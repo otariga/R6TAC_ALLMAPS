@@ -1,64 +1,16 @@
 body {
   background: black;
 }
-.number_slot{
+.ad_slot{
   position: absolute;
-  top: 60px;
-  left: 1465px;
-  border: 0.1rem solid white;
-  height: 95px;
-  width: 245px;
+  top: 40px;
+  left: 1475px;
 }
-.number_slot_title{
-  color: white;
-  position: absolute;
-  top: 10px;
-  left: 75px;
-}
-.numbers {
-  font-size: 24px;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+.ad_slot > p{
+  margin-top: 4px;
+  color: #fff;
+  font-size: 5px;
   text-align: center;
-  line-height: 35px;
-  background-color:black;
-  border: 2px solid white;
-}
-.No_1{
-  position: absolute;
-  top: 40px;
-  left: 15px;
-  color: red;
-  border-color: red;
-}
-.No_2{
-  position: absolute;
-  top: 40px;
-  left: 60px;
-  color: cyan;
-  border-color: cyan;
-}
-.No_3{
-  position: absolute;
-  top: 40px;
-  left: 105px;
-  color:yellow;
-  border-color: yellow;
-}
-.No_4{
-  position: absolute;
-  top: 40px;
-  left: 150px;
-  color: fuchsia;
-  border-color:fuchsia;
-}
-.No_5{
-  position: absolute;
-  top: 40px;
-  left: 195px;
-  color:limegreen;
-  border-color:limegreen;
 }
 /* 攻撃側、防衛側エリアの基準位置 */
 .defense_slot {
