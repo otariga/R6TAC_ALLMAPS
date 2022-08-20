@@ -1,12 +1,12 @@
 body {
   background: black;
 }
-.ad_slot{
+.sponsored_slot{
   position: absolute;
   top: 40px;
   left: 1475px;
 }
-.ad_slot > p{
+.sponsored_slot p{
   margin-top: 4px;
   color: #fff;
   font-size: 5px;
